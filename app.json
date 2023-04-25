@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ProjectName",
-    "slug": "ProjectName",
+    "name": "React-Native-Component-button",
+    "slug": "React-Native-Component-button",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
