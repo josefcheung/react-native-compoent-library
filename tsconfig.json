@@ -1,24 +1,31 @@
 {
-	"extends": "@tsconfig/recommended/tsconfig.json",
-	"compilerOptions": {
-	  "allowSyntheticDefaultImports": true,
-	  "declaration": true,
-	  "esModuleInterop": true,
-	  "jsx": "react",
-	  "lib": ["ES5", "ES2015", "ES2016", "DOM", "ESNext"],
-	  "types": ["node"],
-	  "module": "es2015",
-	  "moduleResolution": "node",
-	  "noImplicitAny": false,
-	  "noUnusedLocals": true,
-	  "outDir": "dist/esm",
-	  "sourceMap": true,
-	  "strict": true,
-	  "target": "ES6"
-	}, 
-	"include": ["src/**/*.ts", "src/**/*.tsx", "./App.tsx"  ],
-	"exclude": [
-	  "storybook"
-	],
-  }
-  
+  "compilerOptions": {
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "declarationDir": "types",
+    "jsx": "react",
+    "types": [
+      "node"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "./App.tsx",
+    "storybook",
+    "src/stories",
+    "**/*.stories.tsx",
+    "node_modules"
+  ],
+  "extends": "expo/tsconfig.base"
+}
